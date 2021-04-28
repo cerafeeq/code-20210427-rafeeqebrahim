@@ -6,7 +6,7 @@ let Patient = function(data) {
 
 Patient.prototype.data = {}
 
-Patient.addPatientInfo = function addPatientInfo(gender, heightCm, weightKg, result) {
+Patient.addPatientInfo = function(gender, heightCm, weightKg, result) {
 	let weight = parseInt(weightKg, 10)
 	if (isNaN(weight))
 		return;
@@ -17,7 +17,6 @@ Patient.addPatientInfo = function addPatientInfo(gender, heightCm, weightKg, res
 	let bmi = weight / (height * height);
 	let bmi_category = 'Normal Weight';
 	let health_risk = 'Low risk';
-	console.log('bmi_category ', bmi_category);
 
 	switch (true) {
 		case (bmi < 18.4):

@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "test": "nyc mocha test/* --recursive",
     "start": "node ./bin/www"
   },
   "dependencies": {
@@ -16,5 +17,13 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "mysql2": "^2.2.5"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "request": "^2.88.2",
+    "should": "^13.2.3",
+    "sinon": "^10.0.0"
   }
 }

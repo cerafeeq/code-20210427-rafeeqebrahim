@@ -18,5 +18,5 @@ exports.addPatientInfo = (req, res) => {
 				}
 			});
 		}));
-	res.json({ message: 'inserted successfully' });
+	res.status(201).json({ message: 'inserted successfully' });
 }
